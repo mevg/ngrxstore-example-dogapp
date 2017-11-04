@@ -3,11 +3,11 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+import { HomePage } from '../home-page/home-page.component';
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'dog-app.html'
 })
-export class MyApp {
+export class DogApp {
   rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {

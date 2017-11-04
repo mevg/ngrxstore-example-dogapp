@@ -4,21 +4,20 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { HomePage, DogApp } from './containers';
 
 @NgModule({
   declarations: [
-    MyApp,
+    DogApp,
     HomePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(DogApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    DogApp,
     HomePage
   ],
   providers: [
