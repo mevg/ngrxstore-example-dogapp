@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs'
 import { Component } from '@angular/core';
 import { State } from '../../reducers'
 import { Store } from '@ngrx/store';
@@ -8,13 +9,21 @@ import * as fromDogs from '../../actions/dogs';
   templateUrl: 'home-page.html'
 })
 export class HomePage {
+
+  dogImgUrl$: Observable<string>
+
   /*
    * The store is injected in the constructor by angular
    * The store will then be used to retrieve data from the store and pass then to components
    * The store will also be used to dispatch action to the store on certain event
    * The State is the global state of the application. It is used by typescript help the developper
-   */ 
-  constructor(private _store: Store<State>) { }
+   */
+  constructor(private _store: Store<State>) {
+    /*
+     * We are getting the imgUrl from the store
+     */
+    this.dogImgUrl$ = _store.select(state => state.dogs.currentDog.imgUrl)
+  }
 
   /*
    * Callback function called when the button is clicked

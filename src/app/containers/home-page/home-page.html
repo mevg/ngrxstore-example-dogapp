@@ -8,7 +8,7 @@
 
 <ion-content padding>
   <div class="center-content">
-    <dog-picture imgUrl="https://dog.ceo/api/img/pembroke/n02113023_3945.jpg"></dog-picture>
+    <dog-picture [imgUrl]="dogImgUrl$ | async"></dog-picture>
 
     <button ion-button (click)="onFindAnotherDogClicked()">Find another dog</button>
   </div>
