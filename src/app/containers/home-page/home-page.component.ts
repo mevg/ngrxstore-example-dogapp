@@ -30,6 +30,6 @@ export class HomePage {
    */
   onFindAnotherDogClicked() {
     // Dispatch the "findAnotherDog" action using the _store injected in the constructor
-    this._store.dispatch(new fromDogs.findAnotherDog())
+    this._store.dispatch(new fromDogs.fetchRandomDog())
   }
 }
