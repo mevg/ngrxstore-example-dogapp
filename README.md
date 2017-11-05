@@ -1,4 +1,5 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## This repo is the repo of the dogapp tutorial
+You can find the tutorial here : https://medium.com/p/2c50b593168a
 
 ## How to use this template
 
