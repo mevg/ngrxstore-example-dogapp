@@ -3,12 +3,10 @@ import { Action } from '@ngrx/store';
 /* 
  * Every Action has a type
  * It's a good practice to keep type constant
- * We're using enum from typescript to list every actions type
+ * We re using one constant for each actions type
  * These types will be later used in reducers to match an action and its handlers
  */
-enum ActionTypes {
-    FIND_ANOTHER_DOG = "FIND_ANOTHER_DOG"
-}
+const FIND_ANOTHER_DOG = "FIND_ANOTHER_DOG";
 
 /*
  * Every actions are basically data type with 2 properties : 
@@ -19,7 +17,7 @@ enum ActionTypes {
  */
 // For the findAnotherDog action, there is no payload
 export class findAnotherDog implements Action {
-    readonly type = ActionTypes.FIND_ANOTHER_DOG;
+    readonly type = FIND_ANOTHER_DOG;
     constructor(payload?: any) { }
 }
 
