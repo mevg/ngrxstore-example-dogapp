@@ -6,7 +6,7 @@ import { Action } from '@ngrx/store';
  * We re using one constant for each actions type
  * These types will be later used in reducers to match an action and its handlers
  */
-const FIND_ANOTHER_DOG = "FIND_ANOTHER_DOG";
+export const FIND_ANOTHER_DOG = "FIND_ANOTHER_DOG";
 
 /*
  * Every actions are basically data type with 2 properties : 
