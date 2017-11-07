@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { State } from '../../reducers';
 import { Store } from '@ngrx/store';
 import { LoadingController, Loading } from 'ionic-angular';
-import * as fromDogs from '../../actions/dogs';
+import * as fromDogsActions from '../../actions/dogs';
 
 @Component({
   selector: 'home-page',
@@ -42,7 +42,7 @@ export class HomePage {
    */
   onFindAnotherDogClicked() {
     // Dispatch the "findAnotherDog" action using the _store injected in the constructor
-    this._store.dispatch(new fromDogs.fetchRandomDog())
+    this._store.dispatch(new fromDogsActions.fetchRandomDog())
   }
 
   _updateLoader(isLoading: boolean) {
