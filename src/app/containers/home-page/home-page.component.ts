@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs'
 import { Component } from '@angular/core';
-import { State } from '../../reducers'
+import { State } from '../../reducers';
 import { Store } from '@ngrx/store';
 import { LoadingController, Loading } from 'ionic-angular';
 import * as fromDogs from '../../actions/dogs';
