@@ -2,7 +2,7 @@
   "name": "dogapp",
   "version": "1.0.0",
   "author": "Antoine Muller <nemak121@gmail.com>",
-  "homepage": "",
+  "homepage": "https://medium.com/p/2c50b593168a",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
