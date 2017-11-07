@@ -4,14 +4,14 @@ import {
   MetaReducer,
 } from '@ngrx/store';
 import { storeLogger } from 'ngrx-store-logger';
-import * as fromDogs from './dogs';
+import * as fromDogsReducer from './dogs';
 
 /**
  * The state contains state from all parts of ouir application
  * The State interface defines every data needed for our app to work
  */
 export interface State {
-  dogs: fromDogs.State
+  dogs: fromDogsReducer.State
 }
 
 /**
@@ -19,7 +19,7 @@ export interface State {
  * Each reducers is responsible for one part of the overall state
  */
 export const reducers: ActionReducerMap<State> = {
-  dogs: fromDogs.reducer
+  dogs: fromDogsReducer.reducer
 };
 
 // console.log all actions using storelogger
