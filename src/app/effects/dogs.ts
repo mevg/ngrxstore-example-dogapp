@@ -19,9 +19,12 @@ export class DogsEffects {
         // Send the request when FETCH_RANDOM_DOG is dispatched
         .ofType(FETCH_RANDOM_DOG)
         // Send the request to the API
-        .switchMap(() => this._dogApiService.findRandomDog())
-        // Request succeeed, we dispatch fetchRandomDogSuccess action with the retrieved imgUrl
-        .map(imgUrl => new fetchRandomDogSuccess(imgUrl))
-        // Something went wrong with the request
-        .catch(err => Observable.of(new fetchRandomDogError(err)))
+        .switchMap(() => {
+            return this._dogApiService.findRandomDog()
+                // Request succeeed, we dispatch fetchRandomDogSuccess action with the retrieved imgUrl
+                .map(imgUrl => new fetchRandomDogSuccess(imgUrl))
+                // Something went wrong with the request
+                .catch(err => Observable.of(new fetchRandomDogError(err)))
+        })
+
 }
