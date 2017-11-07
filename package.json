@@ -1,15 +1,16 @@
 {
   "name": "dogapp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Antoine Muller <nemak121@gmail.com>",
-  "homepage": "http://ionicframework.com/",
+  "homepage": "",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "ionic:run": "./node_modules/.bin/ionic cordova run"
   },
   "dependencies": {
     "@angular/common": "4.4.4",
@@ -26,6 +27,7 @@
     "@ionic/storage": "2.0.1",
     "@ngrx/effects": "^4.1.0",
     "@ngrx/store": "^4.1.0",
+    "cordova-android": "6.3.0",
     "cordova-ios": "4.5.3",
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-ionic-webview": "^1.1.16",
@@ -40,6 +42,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.0.1",
+    "ionic": "^3.16.0",
     "ngrx-store-logger": "^0.2.0",
     "typescript": "2.3.4"
   },
@@ -53,7 +56,8 @@
       "cordova-plugin-ionic-webview": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
