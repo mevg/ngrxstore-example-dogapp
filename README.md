@@ -1,5 +1,5 @@
 ## This repo is the repo of the dogapp tutorial
-You can find the tutorial here : https://medium.com/p/2c50b593168a
+You can find the tutorial here : https://medium.com/@nem121/ionic2-angular2-app-with-redux-like-architecture-2c50b593168a
 
 ## Installation 
 To install dependencies you need to do `npm install` at the root of the project.
